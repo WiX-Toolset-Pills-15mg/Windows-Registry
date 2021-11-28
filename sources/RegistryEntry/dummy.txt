@@ -1,0 +1,8 @@
+WiX Toolset Pills - Registry Entry
+==============================================================================
+
+This file is part of the "Registry Entry" tutorial.
+The tutorial demonstrates how to read and write values from Windows Registry.
+
+For more details please chech the GitHub repository:
+https://github.com/WiX-Toolset-Pills-15mg/Registry-Entry

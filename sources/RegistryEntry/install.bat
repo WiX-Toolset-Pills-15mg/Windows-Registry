@@ -1,0 +1,1 @@
+msiexec /i RegistryEntry.msi /l*vx install.log
