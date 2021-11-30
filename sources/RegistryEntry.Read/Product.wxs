@@ -21,11 +21,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Product
         Id="*"
-        Name="Registry Entry - WiX Toolset Pill"
+        Name="Registry Entry (Read) - WiX Toolset Pill"
         Language="1033"
         Version="1.0.0.0"
         Manufacturer="Dust in the Wind"
-        UpgradeCode="3de4917e-6f56-43f2-bd44-6325686e418f">
+        UpgradeCode="9d398000-efe0-40a8-8e48-e0215c927fc4">
 
         <Package
             InstallerVersion="200"
@@ -35,26 +35,34 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
         <MediaTemplate />
 
-        <Property Id="RUNCOUNT">
+        <!--
+        ================================================================================
+        Step 1 (Read): Add property
+        ================================================================================
+        
+        This property is initialized with the value read from the registry at run time.
+        Look into the log file to see its value.
+        
+        [Next]: No other step is needed.
+        -->
+
+        <Property Id="WINDOWS_VERSION">
             <RegistrySearch
-                Id="RunCount"
+                Id="InstallCountRegistrySearch"
                 Root="HKLM"
-                Key="Software\Dust in the Wind\Registry Entry"
-                Name="RunCount"
+                Key="Software\Microsoft\Windows NT\CurrentVersion"
+                Name="ProductName"
                 Type="raw" />
         </Property>
 
         <Feature
             Id="ProductFeature"
-            Title="Registry Entry"
+            Title="RegistryEntry.Read"
             Level="1">
 
             <ComponentGroupRef Id="ProductComponents" />
         </Feature>
 
-        <InstallExecuteSequence>
-            <Custom Action="IncrementRunCount" After="AppSearch" />
-        </InstallExecuteSequence>
-
     </Product>
+
 </Wix>

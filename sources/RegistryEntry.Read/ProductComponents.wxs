@@ -21,13 +21,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Fragment>
 
-        <Directory Id="TARGETDIR" Name="SourceDir">
-            <Directory Id="ProgramFilesFolder">
-                <Directory Id="ManufacturerFolder" Name="Dust in the Wind">
-                    <Directory Id="INSTALLFOLDER" Name="Registry Entry" />
-                </Directory>
-            </Directory>
-        </Directory>
+        <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+
+            <Component>
+                <File Id="DummyFile" Source="$(var.ProjectDir)dummy.txt" KeyPath="yes" />
+            </Component>
+
+        </ComponentGroup>
 
     </Fragment>
 </Wix>

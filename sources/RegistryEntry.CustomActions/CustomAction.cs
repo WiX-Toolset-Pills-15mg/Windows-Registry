@@ -22,14 +22,14 @@ namespace DustInTheWind.RegistryEntry.CustomActions
     public class CustomActions
     {
         [CustomAction]
-        public static ActionResult IncrementRunCount(Session session)
+        public static ActionResult IncrementInstallCount(Session session)
         {
-            session.Log("--> Begin IncrementRunCount");
+            session.Log("--> Begin IncrementInstallCount");
 
             try
             {
-                IncrementRunCountParameters parameters = new IncrementRunCountParameters(session);
-                parameters.RunCount++;
+                IncrementInstallCountParameters parameters = new IncrementInstallCountParameters(session);
+                parameters.InstallCount++;
 
                 return ActionResult.Success;
             }
@@ -40,7 +40,7 @@ namespace DustInTheWind.RegistryEntry.CustomActions
             }
             finally
             {
-                session.Log("--> End IncrementRunCount");
+                session.Log("--> End IncrementInstallCount");
             }
         }
     }

@@ -23,21 +23,31 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
 
-            <Component Id="DummyFileComponent">
+            <Component>
                 <File Id="DummyFile" Source="$(var.ProjectDir)dummy.txt" KeyPath="yes" />
             </Component>
 
-            <Component Id="RunCountRegistryComponent" Guid="19119C4F-5D3B-4490-9F09-FD2D771A5D47">
+            <!--
+            ================================================================================
+            Step 1 (Create): Add component
+            ================================================================================
+            
+            This component will take care to add the specified registry key and value at install time.
+            It will also remove it at uninstall time because of the `Action="createAndRemoveOnUninstall"` attribute.
+            
+            [Next]: No other step is needed.
+            -->
+
+            <Component>
                 <RegistryKey
-                    Id="RunCountRegistry"
                     Root="HKLM"
                     Key="Software\Dust in the Wind\Registry Entry"
-                    Action="create">
+                    Action="createAndRemoveOnUninstall">
 
                     <RegistryValue
-                        Type="integer"
-                        Name="RunCount"
-                        Value="[RUNCOUNT]"
+                        Type="string"
+                        Name="GitHub"
+                        Value="https://github.com/WiX-Toolset-Pills-15mg/Registry-Entry"
                         KeyPath="yes" />
 
                 </RegistryKey>

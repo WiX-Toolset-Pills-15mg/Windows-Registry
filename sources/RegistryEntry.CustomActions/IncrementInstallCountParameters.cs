@@ -20,15 +20,15 @@ using Microsoft.Deployment.WindowsInstaller;
 
 namespace DustInTheWind.RegistryEntry.CustomActions
 {
-    internal class IncrementRunCountParameters
+    internal class IncrementInstallCountParameters
     {
         private readonly Session session;
 
-        public int RunCount
+        public int InstallCount
         {
             get
             {
-                string rawValue = session["RUNCOUNT"];
+                string rawValue = session["INSTALL_COUNT"];
 
                 if (string.IsNullOrEmpty(rawValue))
                     return 0;
@@ -38,10 +38,10 @@ namespace DustInTheWind.RegistryEntry.CustomActions
 
                 return int.Parse(rawValue);
             }
-            set => session["RUNCOUNT"] = value.ToString(CultureInfo.InvariantCulture);
+            set => session["INSTALL_COUNT"] = value.ToString(CultureInfo.InvariantCulture);
         }
 
-        public IncrementRunCountParameters(Session session)
+        public IncrementInstallCountParameters(Session session)
         {
             this.session = session ?? throw new ArgumentNullException(nameof(session));
         }

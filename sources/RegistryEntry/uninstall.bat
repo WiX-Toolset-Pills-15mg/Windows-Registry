@@ -1,1 +1,0 @@
-msiexec /x RegistryEntry.msi /l*vx uninstall.log
