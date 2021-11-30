@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Product
         Id="*"
-        Name="Registry Entry (Create) - WiX Toolset Pill"
+        Name="Windows Registry (Create) - WiX Toolset Pill"
         Language="1033"
         Version="1.0.0.0"
         Manufacturer="Dust in the Wind"
@@ -37,7 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <Feature
             Id="ProductFeature"
-            Title="Registry Entry"
+            Title="Windows Registry - Create"
             Level="1">
 
             <ComponentGroupRef Id="ProductComponents" />

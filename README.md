@@ -1,4 +1,4 @@
-## Registry Entry
+## Windows Registry
 
 Sometimes, when installing a product, the installer may need to read or write data from/to the Windows Registry. This can be done from C# using a custom action, but there is also a simpler way.
 

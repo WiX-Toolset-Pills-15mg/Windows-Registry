@@ -6,8 +6,9 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>9859faf5-815c-4d9b-846a-c4cc76c6ac0d</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>RegistryEntry.Read</OutputName>
+    <OutputName>WindowsRegistry.Read</OutputName>
     <OutputType>Package</OutputType>
+    <Name>WindowsRegistry.Read</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>

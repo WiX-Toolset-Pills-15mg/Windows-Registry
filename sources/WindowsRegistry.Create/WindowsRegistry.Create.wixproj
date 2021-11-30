@@ -6,9 +6,9 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>5d46ff0f-0c3d-419f-ae06-9d5940b37d5d</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>RegistryEntry.Create</OutputName>
+    <OutputName>WindowsRegistry.Create</OutputName>
     <OutputType>Package</OutputType>
-    <Name>RegistryEntry.Create</Name>
+    <Name>WindowsRegistry.Create</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "RegistryEntry.Create", "RegistryEntry.Create\RegistryEntry.Create.wixproj", "{5D46FF0F-0C3D-419F-AE06-9D5940B37D5D}"
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "WindowsRegistry.Create", "WindowsRegistry.Create\WindowsRegistry.Create.wixproj", "{5D46FF0F-0C3D-419F-AE06-9D5940B37D5D}"
 EndProject
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "RegistryEntry.Read", "RegistryEntry.Read\RegistryEntry.Read.wixproj", "{9859FAF5-815C-4D9B-846A-C4CC76C6AC0D}"
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "WindowsRegistry.Read", "WindowsRegistry.Read\WindowsRegistry.Read.wixproj", "{9859FAF5-815C-4D9B-846A-C4CC76C6AC0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

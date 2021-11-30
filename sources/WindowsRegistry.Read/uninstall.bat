@@ -1,0 +1,1 @@
+msiexec /x WindowsRegistry.Read.msi /l*vx uninstall.log

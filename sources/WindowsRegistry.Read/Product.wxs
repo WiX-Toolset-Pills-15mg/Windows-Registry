@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Product
         Id="*"
-        Name="Registry Entry (Read) - WiX Toolset Pill"
+        Name="Windows Registry (Read) - WiX Toolset Pill"
         Language="1033"
         Version="1.0.0.0"
         Manufacturer="Dust in the Wind"
@@ -48,7 +48,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <Property Id="WINDOWS_VERSION">
             <RegistrySearch
-                Id="InstallCountRegistrySearch"
+                Id="WindowsVersionRegistrySearch"
                 Root="HKLM"
                 Key="Software\Microsoft\Windows NT\CurrentVersion"
                 Name="ProductName"
@@ -57,7 +57,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <Feature
             Id="ProductFeature"
-            Title="RegistryEntry.Read"
+            Title="Windows Registry - Read"
             Level="1">
 
             <ComponentGroupRef Id="ProductComponents" />

@@ -1,9 +1,9 @@
-WiX Toolset Pills - Registry Entry (Create)
+WiX Toolset Pills - Windows Registry (Create)
 ==============================================================================
 
-This file is part of the "Registry Entry" tutorial.
+This file is part of the "Windows Registry" tutorial.
 The tutorial demonstrates how to read and write values from Windows Registry.
 Look into Windows Registry (regedit.exe) to see the value that was created there at install time.
 
 For more details please chech the GitHub repository:
-https://github.com/WiX-Toolset-Pills-15mg/Registry-Entry
+https://github.com/WiX-Toolset-Pills-15mg/Windows-Registry

@@ -41,13 +41,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <Component>
                 <RegistryKey
                     Root="HKLM"
-                    Key="Software\Dust in the Wind\Registry Entry"
+                    Key="Software\Dust in the Wind\Windows Registry"
                     Action="createAndRemoveOnUninstall">
 
                     <RegistryValue
                         Type="string"
                         Name="GitHub"
-                        Value="https://github.com/WiX-Toolset-Pills-15mg/Registry-Entry"
+                        Value="https://github.com/WiX-Toolset-Pills-15mg/Windows-Registry"
                         KeyPath="yes" />
 
                 </RegistryKey>
