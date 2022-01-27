@@ -23,22 +23,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
 
-            <Component>
+            <Component Id="DummyFileComponent">
                 <File Id="DummyFile" Source="$(var.ProjectDir)dummy.txt" KeyPath="yes" />
             </Component>
 
             <!--
-            ================================================================================
+            ====================================================================================================
             Step 1 (Create): Add component
-            ================================================================================
+            ====================================================================================================
             
             This component will take care to add the specified registry key and value at install time.
-            It will also remove it at uninstall time because of the `Action="createAndRemoveOnUninstall"` attribute.
+            It will also remove it at uninstall time because of the `Action="createAndRemoveOnUninstall"`
+            attribute.
             
-            [Next]: No other step is needed.
+            NEXT: install.bat
             -->
 
-            <Component>
+            <Component Id="WindowsRegistryComponent">
                 <RegistryKey
                     Root="HKLM"
                     Key="Software\Dust in the Wind\Windows Registry"

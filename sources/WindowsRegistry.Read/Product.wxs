@@ -18,6 +18,24 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
+<!--
+====================================================================================================
+Start (Read): Overview
+====================================================================================================
+
+This project demonstrates how to read a value from the Windows Registry when the product is
+installed.
+
+Let's read the Windows' version from the registry:
+    - Key: HKLM\Software\Microsoft\Windows NT\CurrentVersion
+    - Value: ProductName
+
+The only thing needed is to create a new property and initialize it with the value from the Windows
+Registry.
+
+NEXT: Product.wxs (DOWN)
+-->
+
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Product
         Id="*"
@@ -36,14 +54,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <MediaTemplate />
 
         <!--
-        ================================================================================
+        ====================================================================================================
         Step 1 (Read): Add property
-        ================================================================================
+        ====================================================================================================
         
         This property is initialized with the value read from the registry at run time.
         Look into the log file to see its value.
         
-        [Next]: No other step is needed.
+        NEXT: install.bat
         -->
 
         <Property Id="WINDOWS_VERSION">

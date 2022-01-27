@@ -18,7 +18,26 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
+<!--
+====================================================================================================
+Start (Create): Overview
+====================================================================================================
+
+This project demonstrates how to add a value into the Windows Registry when the product is
+installed.
+
+Let's choose to add this pill's repository's url into the key in Windows Registry:
+    - Key: HKLM\Software\Dust in the Wind\Windows Registry
+    - Value: GitHub = https://github.com/WiX-Toolset-Pills-15mg/Windows-Registry
+    
+The only needed step is to add a new component for the registry value.
+Let's start.
+
+NEXT: ProductComponents.wxs
+-->
+
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
     <Product
         Id="*"
         Name="Windows Registry (Create) - WiX Toolset Pill"
