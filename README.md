@@ -22,7 +22,8 @@ Sometimes, when installing a product, the installer may need to read or write da
 
 ### d) Log file examples
 
-- TBD
+- [doc/logs](doc/logs)
+- Sometimes a quick look into the log files may be useful, but running the installer each time is cumbersome. I generated the log files for what I thought are the meaningful scenarios and I placed them into this directory. Have a look when needed.
 
 ## Suggestions
 
