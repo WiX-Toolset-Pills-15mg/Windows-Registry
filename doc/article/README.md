@@ -64,7 +64,7 @@ Then, open the Registry Editor (`regedit.exe`) and look for the `\Software\Dust 
 
 ![Registry Editor](regedit.png)
 
-### Step 4 - uninstall
+### Step 3 - Uninstall
 
 Uninstall the product, either from Control Panel or from command line:
 
@@ -76,7 +76,7 @@ Check again the Registry Editor do see that the `GitHub` value is gone.
 
 ## II) Read a registry entry
 
-### Step 1 - Create property
+### Step 1 - Create Property
 
 A value read from Windows Registry must be stored in a public property. So, the first step is to create a public property. The `<RegistrySearch>` element is providing the value read from the Windows Registry. In this example we choose to read the windows version.
 
@@ -91,7 +91,7 @@ A value read from Windows Registry must be stored in a public property. So, the 
 </Property>
 ```
 
-### Step 2 - Build and run
+### Step 2 - Build and Install
 
 **Note**: Every installer must have at least one file deployed, so, make sure to add a dummy file to the installer. See the example from the `sources` directory (`ProductComponents.wxs` and `Directories.wxs`) in order to be able to build the project.
 

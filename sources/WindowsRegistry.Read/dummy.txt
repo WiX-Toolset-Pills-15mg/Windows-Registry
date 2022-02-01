@@ -1,7 +1,7 @@
-WiX Toolset Pills - Windows Registry (Read)
-==============================================================================
+WiX Toolset Pills 15mg - Windows Registry (Read)
+====================================================================================================
 
-This file is part of the "Windows Registry" tutorial.
+This file is part of the "Windows Registry" pill.
 
 The tutorial demonstrates how to read values from Windows Registry.
 Look into the log file to see the value that was read from Windows Registry at install time.
