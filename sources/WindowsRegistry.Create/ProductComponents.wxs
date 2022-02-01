@@ -29,7 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
             <!--
             ====================================================================================================
-            Step 1 (Create): Add component
+            Step 1 (Create): Create component
             ====================================================================================================
             
             This component will take care to add the specified registry key and value at install time.
